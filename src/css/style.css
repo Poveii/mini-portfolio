@@ -1,0 +1,148 @@
+@import "./reset.css";
+@import "./scroll.css";
+
+/* ====== LAYOUT ====== */
+body {
+  background: url(../images/background.jpg) no-repeat center;
+  background-size: cover;
+
+  font-family: "VT323", monospace;
+  color: #f3f3f3;
+  font-size: 1.125rem;
+
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+/* ====== MAIN ====== */
+.card {
+  width: 370px;
+
+  background-color: #070d12;
+  border: 2px solid #e126d9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card .my-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  padding-top: 20px;
+}
+
+.my-information img {
+  border: 4px solid #02d08f;
+  border-radius: 100%;
+}
+
+.my-information .name {
+  font-size: 1.625rem;
+}
+
+.my-information .office {
+  font-size: 1.25rem;
+  color: #b8bbc5;
+}
+
+.card .content {
+  margin-top: 15px;
+}
+
+.content .tabs {
+  display: flex;
+}
+
+.tabs .tab {
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.tab img {
+  width: 30px;
+  user-select: none;
+}
+
+.tab.selected {
+  background-color: #262626;
+}
+
+.tab:hover {
+  background-color: #414141;
+}
+
+.content .tabs-information {
+  background-color: #262626;
+}
+
+.tabs-information .information {
+  min-height: 260px;
+  padding: 15px;
+  display: none;
+}
+
+.information.selected {
+  display: block;
+}
+
+.information .subtitle {
+  font-size: 1.375rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.information .description {
+  font-size: 1.25rem;
+  max-height: 180px;
+  padding-right: 15px;
+  overflow-y: auto;
+}
+
+.description span {
+  color: #02d08f;
+}
+
+.information .social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.social-media li a {
+  width: 250px;
+  display: block;
+  color: #f3f3f3;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.25rem;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.social-media .curriculum {
+  background-color: #06c185;
+}
+
+.social-media .linkedin {
+  background-color: #1d87bd;
+}
+
+.social-media .github {
+  background-color: #545454;
+}
+
+.social-media li a:hover {
+  opacity: 0.8;
+}
