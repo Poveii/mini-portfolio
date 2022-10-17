@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="" alt="Um GIF do meu projeto Mini Portfólio, com informações sobre mim e alguns links de contato" />
+  <img src="https://user-images.githubusercontent.com/79858234/196248963-460cdd6c-71ce-4947-ab58-3ec6cdf1ab5f.gif" alt="Um GIF do meu projeto Mini Portfólio, com informações sobre mim e alguns links de contato" />
 </div>
 
 # Mini Portfolio
